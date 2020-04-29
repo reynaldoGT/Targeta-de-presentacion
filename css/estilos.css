@@ -1,0 +1,212 @@
+*{
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	 box-sizing: border-box;
+}
+body{
+background: url('../img/bg.png');
+background-size: cover;
+background-attachment:fixed;
+/*	con esta linea hacemos que el fondo este pegado y no se mueva  */
+font-family: 'Open sans',sans-serif,helvetica;
+}
+
+a{
+	text-decoration: none;
+	/*	quita los estilos pordefecto de la a  */
+}
+
+.contenedor{
+	width: 90%;
+	max-width: 700px;
+	/*	con margin auto hacemos que nuestro contennedor este en el medio  */
+	margin: auto;
+	height: 100%;
+	display: flex;
+	/*	con esto los elementos hijos se van al medio  */
+	align-items: center;
+}
+.tarjeta{
+	background: #fff;
+	/*	el primer valor es para arriba y abajo, el segundo es para los izquierda-derecha  */
+	margin: 40px 0;
+	border-radius: 5px ;
+	/*	hace que todo el contenido que esta fuera del contenido que lo oculte  */
+	overflow: hidden;
+	z-index: 1000;
+	width: 100%;
+}
+/*	/*	Slinder Banner  */
+.slider_banner{
+	overflow: hidden;
+	z-index: 1000;
+	position: relative;
+}
+.slider_banner .banner{
+	position: relative;
+	width: 100%;
+}
+
+.slider_banner .banner img{
+	/*	hace que se aliene hacia arriba, quitando ese espcio molesto que hay  */
+	vertical-align: top;
+	width: 100%;
+	/*	vamos a poder ordenar el de las imagenes  */
+	position: absolute;
+	top: 0;
+	left: 100%;
+
+}
+.slider_banner .fecha-banner{
+	font-size: 35px;
+	line-height: 35px;
+	/*	se esta usando un color rgba con una tranparencia  */
+	color: rgba(0,0,0,.2);
+	position: absolute;
+	top:50%;
+	z-index: 1100;
+}
+
+.slider_banner .fecha-banner:hover{
+	color:rgba(0,0,0,.5);
+}
+.slider_banner .anterior{
+	left:20px;
+}
+.slider_banner .siguiente{
+	right:20px;
+}
+
+/*	=======================  */
+
+/* a partir de este punto se hara el slider info*/
+.slider_info{
+	text-align: center;
+	overflow: hidden;
+	padding: 20px 0;
+	z-index: 1000;
+	position: relative;
+}
+/*	Seccio de informacion  */
+.slider_info .informacion{
+	width: 100%;
+
+}
+.slider_info .informacion article{
+	width: : 100%;
+	overflow: hidden;
+	position: relative;
+
+}
+.slider_info .informacion article .slide{
+background: #fff;
+width: 100%;
+left: 100%;
+position: absolute;
+padding: 20px 80px;
+}
+
+.slider_info .fecha-info{
+	font-size: 35px;
+	line-height: 35px;
+	color:#e6e6e6;
+	position: absolute;
+	top:50%;
+	z-index: 1000;
+}
+.slider_info .fecha-info:hover{
+	color: #6ed279;
+
+}
+.slider_info .anterior{
+left: 20px;
+}
+.slider_info .siguiente{
+right: 20px;
+}
+
+/*	Estilos para las slides de info  */
+
+.slider_info .informacion .nombre{
+	color:#444444;
+	font-size: 38px;
+	line-height: 38px;
+	font-weight: 600;
+	margin-bottom: 16px;
+}
+.slider_info .informacion .trabajo{
+	color: #55acee;
+	font-size: 18px;
+	line-height: 18px;
+	margin-bottom: 16px;
+}
+.slider_info .informacion .pais{
+	color:#8d8d8d;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+.slider_info .informacion .pais img{
+position: relative;
+top:2px;
+margin-right: 10px;
+}
+.slider_info .informacion .pais .texto{
+	color :#444444;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 16px;
+}
+.slider_info .informacion .pais .subtitulo{
+	color :#55caaee;
+	font-size: 18px;
+	line-height: 24px;
+}
+/*	Botones del slider info  */
+.slider_info .botones{
+	width: 100%;
+}
+
+.slider_info .botones span{
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	margin: 0 10px;
+	border-radius: 50%;
+	background: #e6e6e6;
+}
+.slider_info .botones .active{
+background: #6ed279;
+}
+
+/*	entranto a las redes sociales   */
+.redes-sociales{
+	width: 100%;
+	text-align: center;
+	padding: 20px 0;
+
+}
+
+.redes-sociales a{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	line-height: 20px;
+	padding: 14px 0;
+	color:#fff;
+	background: #000;
+	border-radius: 50%;
+	margin: 0 10px;
+
+}
+
+.redes-sociales .behance{
+	background: #1769ff;
+}
+.redes-sociales .facebook{
+	background: #3b5998;
+}
+.redes-sociales .twitter{
+	background: #55caee;
+}

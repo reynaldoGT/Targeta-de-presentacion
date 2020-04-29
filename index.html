@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- es diferente que como se enseña en el video, cuidado -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600i" rel="stylesheet">
+	<link rel="stylesheet" href="css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>About it Rey :D</title>
+</head>
+
+<body>
+	<div class="contenedor" id="contenedor">
+		<section class="tarjeta">
+			<section class="slider_banner">
+				<div class="banner" id="banner">
+					<img class="slide active" src="img/banner.jpg" alt="">
+					<img class="slide" src="img/banner2.jpg" alt="">
+					<img class="slide" src="img/banner3.jpg" alt="">
+					<img class="slide" src="img/banner4.jpg" alt="">
+
+				</div>
+				<a href="#" id="banner-prev" class="fecha-banner anterior"><span class="fas fa-chevron-left"></span></a>
+				<!-- la forma de manejar icono es diferente, mirar la documentacion original -->
+				<a href="#" id="banner-next" class="fecha-banner siguiente"><span class="fas fa-chevron-right"></span></a>
+
+			</section>
+			<section class="slider_info">
+				<a href="#" id="info-prev" class="fecha-info anterior"><span class="fas fa-chevron-left"></span></a>
+
+
+				<a href="" id="info-next" class="fecha-info siguiente"><span class="fas fa-chevron-right"></span></a>
+				<section id="informacion" class="informacion">
+					<article class="" id="info">
+						<!-- la clase active hace referencia a que un elemento esta activo en ese momento -->
+						<div class="slide active">
+							<h1 class="nombre">Rey GT</h1>
+							<p class="trabajo">Estudiante de desarrollo web</p>
+							<p class="pais"><img src="img/bandera.png" alt="">BOLIVIA</p>
+						</div>
+						<div class="slide">
+							<h2 class="subtitulo">Lorem ipsum dolor sit amet, consectetur.</h2>
+							<p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, debitis, laboriosam! Impedit aperiam neque dolor atque dolores quis quidem sint!</p>
+						</div>
+						<div class="slide">
+							<h2 class="subtitulo">Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+							<p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ex voluptatibus. <br><br> quibusdam suscipit facere sit alias blanditiis cum aut deserunt incidunt velit placeat, quae omnis, doloremque dicta ipsa fugiat praesentium.</p>
+						</div>
+					</article>
+					<div class="botones" id="botones"></section>
+			</section>
+
+			<section class="redes-sociales">
+				<a href="#" class="behance"><span class="fab fa-behance-square"></span></a>
+				<a href="#" class="facebook"><span class="fab fa-facebook"></span></a>
+				<a href="#" class="twitter"><span class="fab fa-twitter"></span></a>
+			</section>
+		</section>
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+	<script src="js/main.js"></script>
+	
+
+</body>
+
+</html>
